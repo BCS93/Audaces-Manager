@@ -1,0 +1,29 @@
+<div class="body">
+    <div>
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contentContainer">
+        <div class="header">
+            <div >
+                <h1 class="title" >{{title}}</h1>
+            </div>
+        </div>
+        <form [formGroup]="formColecao">
+            <div class="inputContainer">
+                <input class="input" type="text" formControlName="nome" placeholder="Nome da Coleção">
+                <input class="input" type="text" formControlName="responsavel" placeholder="Responsável pela coleção">
+                <input class="input" type="text" formControlName="estacao" placeholder="Para qual estação?">
+                <input class="input" type="text" formControlName="marca" placeholder="Para qual marca você está criando?">
+                <input class="input" type="number" formControlName="orcamento" placeholder="Qual é o orçamento desta coleção?">
+                <input class="input" type="number" formControlName="ano" placeholder="Ano de Lançamento">
+            </div>
+            <div class="img">
+                <img src="/assets/image 1.png" alt="imagem ilustrativa">
+            </div>
+            <div class="footer">
+                <button class="btnCancel" mat-flat-button (click)="onCancel()">Cancelar</button>
+                <button type="submit" mat-flat-button (click)="onSubmit()">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>

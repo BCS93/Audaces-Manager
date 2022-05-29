@@ -1,0 +1,34 @@
+<div class="body">
+    <div>
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contentContainer">
+        <div class="header">
+            <div>
+                <h1 class="title">Coleções</h1>
+            </div>
+            <div class="bt"><button mat-flat-button routerLink="/criar-colecao">Criar Coleção</button>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ColeçãoID</th>
+                        <th>Nome da Coleção</th>
+                        <th>Estação e Lançamento</th>
+                        <th>Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dados of colecoes$ |async" [routerLink]="['/editar-colecao', dados.id]">
+                        <th>{{ dados.id }}</th>
+                        <td><span>{{ dados.nome }}</span></td>
+                        <td><span>{{ dados.estacao }} {{ dados.ano }}</span></td>
+                        <td><span>{{ dados.responsavel }}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

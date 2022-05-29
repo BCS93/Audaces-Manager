@@ -1,0 +1,48 @@
+<div class="body">
+    <div>
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contentContainer">
+        <div class="header">
+            <div>
+                <h1 class="title">Bem Vindo, {{ name }}</h1>
+            </div>
+        </div>
+
+        <div class="infoContainer">
+            <div>
+                <span>Coleções</span>
+                <h1></h1>
+            </div>
+            <div>
+                <span>Modelos</span>
+                <h1></h1>
+            </div>
+            <div>
+                <span>Orçamento Médio por Coleção</span>
+                <h1></h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ColeçãoID</th>
+                        <th>Nome da Coleção</th>
+                        <th>Orçamento</th>
+                        <th>Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dados of colecoes$ |async">
+                        <th>{{ dados.id }}</th>
+                        <td><span>{{ dados.nome }}</span></td>
+                        <td><span>{{ dados.orcamento | currency:'BRL' }}</span></td>
+                        <td><span>{{ dados.responsavel }}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

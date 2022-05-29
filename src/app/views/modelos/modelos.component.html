@@ -1,0 +1,33 @@
+<div class="body">
+    <div>
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contentContainer">
+        <div class="header">
+            <div>
+                <h1 class="title">Modelos</h1>
+            </div>
+            <div class="bt"><button mat-flat-button routerLink="/criar-modelo">Criar Modelo</button></div>
+        </div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ModeloID</th>
+                        <th>Nome do Modelo</th>
+                        <th>Coleção</th>
+                        <th>Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dados of modelos$ |async" [routerLink]="['/editar-modelo', dados.id]">
+                        <th>{{ dados.id }}</th>
+                        <td><span>{{ dados.nome }}</span></td>
+                        <td><span>{{ dados.colecao }}</span></td>
+                        <td><span>{{ dados.responsavel }}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FEFEFE;
+}
+
+.mat-typography {
+    font-family: 'inter';
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    display: flex;
+    height: 100%;
+}
+
+.contentContainer {
+    width: 80%;
+    margin: 50px auto 20px 240px;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100px;
+}
+
+h1.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mat-flat-button {
+    width: 200px;
+    height: 40px;
+    background-color: #0073CF;
+    color: #FFFFFF;
+}
+
+.inputContainer {
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.input {
+    width: 350px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #B4B6C1;
+    padding-left: 15px;
+    color: black;
+    margin: 0 30px;
+}
+
+tr {
+    text-align: center;
+    line-height: 40px;
+}
+
+tr span {
+    color: #9395A3;
+
+}
+
+.table {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+<div class="background">
+    <div class="LoginContainer">
+        <img src="assets/Fill-51.png" alt="Ícone">
+        <div>
+            <h1 class="title">Sign In</h1>
+            <p>Insira suas credenciais para acessar sua conta</p>
+        </div>
+        <form [formGroup]="_form" (ngSubmit)="submit()">
+            <input class="input" type="email" formControlName="email" placeholder="informe seu e-mail">
+            <input class="input" type="password" formControlName="password" placeholder="informe sua senha">
+            <button mat-flat-button type="submit" [disabled]="!_form.valid" routerLink="/home">Entrar</button>
+        </form>
+        <div class="RedefinirSenha">
+            <p>Esqueceu sua senha? <a routerLink="/redefinir-senha">Redefinir senha</a></p>
+        </div>
+    </div>
+
+</div>

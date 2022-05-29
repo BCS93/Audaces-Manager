@@ -1,0 +1,96 @@
+{
+  "modelos": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "responsavel": "Pessoa 1",
+      "tipo": "6",
+      "colecao": "Coleção 6",
+      "bordado": "false",
+      "estampa": "false"
+    },
+    {
+      "id": 2,
+      "nome": "Modelo 2",
+      "responsavel": "Pessoa 2",
+      "tipo": "7",
+      "colecao": "Coleção 3",
+      "bordado": "false",
+      "estampa": "true"
+    },
+    {
+      "id": 3,
+      "nome": "modelo 3",
+      "responsavel": "Pessoa 3",
+      "tipo": "6",
+      "colecao": "Coleção 3",
+      "bordado": "false",
+      "estampa": "true"
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção 1",
+      "responsavel": "Pessoa1",
+      "estacao": "Verão",
+      "marca": "marca1",
+      "orcamento": 2000,
+      "ano": 2022
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2 ",
+      "responsavel": "Pessoa 2",
+      "estacao": "Outono Inverno",
+      "marca": "Marca 2",
+      "orcamento": 450236.258,
+      "ano": 2022
+    },
+    {
+      "id": 3,
+      "nome": "Coleção 3",
+      "responsavel": "Pessoa 3",
+      "estacao": "Primavera",
+      "marca": "Diesel",
+      "orcamento": "45000.00",
+      "ano": 2023
+    },
+    {
+      "id": 4,
+      "nome": "Coleção 4",
+      "responsavel": "Pessoa 4",
+      "estacao": "Outono",
+      "marca": "Umbro",
+      "orcamento": 50652,
+      "ano": 2024
+    },
+    {
+      "id": 5,
+      "nome": "Coleção 5",
+      "responsavel": "Pessoa 5",
+      "estacao": "Primavera",
+      "marca": "Puma",
+      "orcamento": 25000,
+      "ano": 2025
+    },
+    {
+      "id": 6,
+      "nome": "Coleção 6",
+      "responsavel": "Pessoa 6",
+      "estacao": "Verão Inverno",
+      "marca": "Under Armor",
+      "orcamento": 450000,
+      "ano": 2022
+    },
+    {
+      "id": 7,
+      "nome": "dshflakh",
+      "responsavel": "dsofha",
+      "estacao": "sdkljla",
+      "marca": "dsga~~l",
+      "orcamento": 14613,
+      "ano": 2211
+    }
+  ]
+}

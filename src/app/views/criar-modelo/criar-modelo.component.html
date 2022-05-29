@@ -1,0 +1,54 @@
+<div class="body">
+    <div>
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contentContainer">
+        <div class="header">
+            <div>
+                <h1 class="title">{{title}}</h1>
+            </div>
+        </div>
+        <form [formGroup]="formModelo">
+            <div class="inputContainer">
+                <input formControlName="nome" class="input" type="text" placeholder="Nome do Modelo">
+                <input formControlName="responsavel" class="input" placeholder="Responsável pelo Modelo">
+                <select formControlName="tipo" class="input">
+                    <option disabled selected hidden>Tipo do Modelo</option>
+                    <option value="1">bermuda</option>
+                    <option value="2">biquini</option>
+                    <option value="3">bolsa</option>
+                    <option value="4">boné</option>
+                    <option value="5">calça</option>
+                    <option value="6">calçados</option>
+                    <option value="7">camisa</option>
+                    <option value="8">chapéu</option>
+                    <option value="9">saia</option>
+                </select>
+                <select formControlName="colecao" class="input" name="Selecionar Coleção">
+                    <option disabled selected hidden>Selecionar Coleção</option>
+                    <option *ngFor="let colecao of colecoes$|async">{{colecao.nome}}</option>
+                </select>
+                <div class="inputRadio">
+                    <label id="bordado">Possui bordado?</label><br>
+                    <mat-radio-group formControlName="bordado" aria-labelledby="bordado">
+                        <mat-radio-button color="primary"  value="true">Sim</mat-radio-button>
+                        <mat-radio-button color="primary"  value="false">Não</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="inputRadio">
+                    <label id="estampa">Possui estampa?</label><br>
+                    <mat-radio-group formControlName="estampa" aria-labelledby="estampa">
+                        <mat-radio-button color="primary" value="true">Sim</mat-radio-button>
+                        <mat-radio-button color="primary" value="false">Não</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button *ngIf="btnExcluir" class="btnExcluir" mat-flat-button color="warn" (click)="onDelete()">Excluir</button>
+                <button class="btnCancel" mat-flat-button (click)="onCancel()">Cancelar</button>
+                <button type="submit" mat-flat-button (click)="onSubmit()">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+.logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 43px 86px 50px 70px;
+
+}
+
+.logo p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #374557;
+    padding-top: 14px;
+}
+
+.menuContainer {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    border-right: 1px solid #EBEBEB;
+}
+
+h3 {
+    font-size: 12px;
+    color: #B4B6C1;
+    font-weight: 400;
+    margin: 40px 20px 20px 20px;
+}
+
+.fontMenu {
+    font-size: 14px;
+    color: #6A7090;
+}
+
+li {
+    margin: 0 15px 0 0;
+    line-height: 34px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+}
+
+li:hover {
+    background-color: #EBF0FE;
+    border-radius: 6px;
+    width: 180px;
+    height: 34px;
+    padding: 0px 0px 0px 15px;
+    margin-left: -15px;
+   
+}
+
+.fontMenu:hover {
+    color: #5874DF;
+}
